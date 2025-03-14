@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Estudiantes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Estudiantes</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Subir una obra</h2>
+            <form id="portfolioForm">
+                <label for="name">Nombre de la Obra:</label>
+                <input type="text" id="name" required>
+
+                <label for="technique">Técnica Usada:</label>
+                <input type="text" id="technique" required>
+
+                <label for="grade">Grado:</label>
+                <input type="text" id="grade" required>
+
+                <label for="image">Subir Imagen:</label>
+                <input type="file" id="image" accept="image/*" required>
+
+                <button type="submit">Subir Obra</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Galería de Obras</h2>
+            <div id="gallery"></div>
+        </section>
+    </main>
+
+    <!-- Enlace al archivo script.js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
